@@ -1,15 +1,30 @@
-cat << 'EOF' >> .gitignore
-venv/
+cat << 'EOF' > .gitignore
+# Environment & Secrets
 .env
-__pycache__/
-*.pyc
-uploads/
-# Dependencies
-node_modules/
-frontend/node_modules/
+.env.*
+!.env.example
+*.env
 
-# OS files
+# Operating System
 .DS_Store
 */.DS_Store
-EOF
 
+# Python & Virtual Environment
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Node & Next.js
+node_modules/
+*/node_modules/
+.next/
+out/
+build/
+dist/
+
+# Uploaded Files
+uploads/
+backend/uploads/
+EOF
