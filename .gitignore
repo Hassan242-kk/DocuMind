@@ -1,0 +1,15 @@
+venv/
+.env
+.env.*
+*.env
+uploads/
+backend/uploads/
+node_modules/
+*/node_modules/
+.next/
+out/
+build/
+__pycache__/
+*.py[cod]
+.DS_Store
+*/.DS_Store
