@@ -1,5 +1,15 @@
+cat << 'EOF' >> .gitignore
 venv/
 .env
 __pycache__/
 *.pyc
 uploads/
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# OS files
+.DS_Store
+*/.DS_Store
+EOF
+
